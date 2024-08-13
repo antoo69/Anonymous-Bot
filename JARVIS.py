@@ -9,7 +9,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 SD = Client("anymouse sender", bot_token = BOT_TOKEN, api_id = API_ID, api_hash = API_HASH)
 
-STICKER = "CAACAgUAAx0CfL_LsAACBq1l_C1ssTP1ZZyrieOyXerC8SxliAACQw8AAj78MVeb3v2OFvEnNB4E"
+STICKER = "2_5217577170838241432.webm"
 
 START_TEXT = """🌷 ʜᴇʏ ᴅᴇᴀʀ, ɪ ᴀᴍ  𝙻ᴀᴡʟᴇss 𝙰ɴᴏɴʏᴍᴏᴜs Sᴇɴᴅᴇʀ Bᴏᴛ. 
 
@@ -19,15 +19,15 @@ START_TEXT = """🌷 ʜᴇʏ ᴅᴇᴀʀ, ɪ ᴀᴍ  𝙻ᴀᴡʟᴇss 𝙰ɴᴏ
 🛠 **Server** : [Heroku](Heroku.com)
 🛠 **Library** : [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-𝙼ᴀᴅᴇ 𝙱ʏ » [𝙹ᴀʀᴠɪs](https://t.me/JARVIS_V2)"""
+𝙼ᴀᴅᴇ 𝙱ʏ » [ꜰᴇʀᴅɪ](https://t.me/fsyrl)"""
 
 REPLY_MARKUP = InlineKeyboardMarkup([
-    [InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/JARVIS_V2"),
+    [InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/fsyrl"),
         InlineKeyboardButton(
-            text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url=f"https://t.me/Dora_Hub")],
-    [InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/JARVIS_V_SUPPORT"),
+            text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url=f"https://t.me/BestieVirtual")],
+    [InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/filmlk21kw"),
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://t.me/Doraa_World")]])
+            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://t.me/BestieVirtual")]])
 
 @SD.on_message(filters.command('start') & filters.private)
 async def start(client, message):    
@@ -51,5 +51,5 @@ async def SDBot(client, message):
     await message.copy(message.chat.id)
 
 print("YourBot is Started")
-print("Join @JARVIS_X_SUPPORT.")
+print("Join @BestieVirtual.")
 SD.run()
